@@ -4,7 +4,9 @@
 DDD (Domain-Driven Design).
 Este é um projeto simples e prático, servindo para iniciar rapidamente o desenvolvimento com um projeto pronto para uso.
 
-## Tecnologias
+[![Stack](https://skillicons.dev/icons?i=java,spring,maven,hibernate,postgres)](https://skillicons.dev)
+
+## Tecnologias e Dependências
 
 Este projeto usa as seguintes dependências principais:
 
