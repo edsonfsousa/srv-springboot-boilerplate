@@ -1,0 +1,37 @@
+# SERVER PROPERTIES
+server:
+  port: ${SERVER_PORT:8082}
+  servlet:
+    context-path: /srv-springboot-boilerplate/api
+
+# SPRING CORE PROPERTIES
+spring:
+  application:
+    name: srv-springboot-boilerplate
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/boilerplate_db
+    username: postgres
+    password: postgres@123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  main:
+    banner-mode: console
+  banner:
+    location: banner.txt
+
+# SPRINGDOC CONFIGURATION (somente para ambiente de desenvolvimento)
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: alpha
+    validator-url: null

@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "302a52c3-9f19-47b6-b41c-d7072a7b0ad4",
+		"name": "Boilerplate_test",
+		"description": "http://localhost:8082/srv-springboot-boilerplate/EndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16344055"
+	},
+	"item": [
+		{
+			"name": "Boilerplate_v1",
+			"item": [
+				{
+					"name": "Get dummies",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url_boilerplate}}dummies/1",
+							"host": [
+								"{{api_url_boilerplate}}dummies"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get dummy by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/srv-springboot-boilerplate/api/v1/dummies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"srv-springboot-boilerplate",
+								"api",
+								"v1",
+								"dummies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put dummy by Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sample Dummy\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url_boilerplate}}dummies/1",
+							"host": [
+								"{{api_url_boilerplate}}dummies"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post dummy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sample Dummy\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url_boilerplate}}dummies",
+							"host": [
+								"{{api_url_boilerplate}}dummies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete dummy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sample Dummy\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url_boilerplate}}dummies/1",
+							"host": [
+								"{{api_url_boilerplate}}dummies"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "[http://localhost:8082/srv-springboot-boilerplate/](http://localhost:8082/srv-springboot-boilerplate/EndFragment)"
+		}
+	],
+	"variable": [
+		{
+			"key": "api_url_boilerplate",
+			"value": "http://localhost:8082/srv-springboot-boilerplate/api/v1/"
+		}
+	]
+}
