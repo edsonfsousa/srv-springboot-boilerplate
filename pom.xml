@@ -15,7 +15,7 @@
     <!-- Informações básicas do projeto -->
     <groupId>com.edsonfsousa</groupId>
     <artifactId>srv-springboot-boilerplate</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>srv-springboot-boilerplate</name>
     <description>srv-springboot-boilerplate</description>
     <url/>
